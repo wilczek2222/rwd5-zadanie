@@ -1,0 +1,86 @@
+*{ 
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{ 
+    height: 100%;
+    width: 100%;
+}
+
+@media all and (min-width: 1170px){ 
+    
+    .container{ 
+        position: static;
+        
+    }
+    .obraz{ 
+        position: relative;
+        height: 1170px;
+        width: 100%;
+        background-size: cover;
+    }
+    .tekst{ 
+        position: absolute;
+        top: 585px;
+        z-index: 1;
+        vertical-align: middle;
+        text-transform: uppercase;
+        text-align: left;
+        color: white;
+    }
+    .obraz2{ 
+        visibility: hidden;
+    }
+}
+@media all and (min-width:992px) and (max-width: 1170px){ 
+    
+    .container{ 
+        position: static;
+        
+    }
+    .obraz{ 
+        position: absolute;
+        visibility: hidden;
+    }
+    .tekst{ 
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        z-index: 1;
+        text-transform: uppercase;
+        color: white;
+    }
+    .obraz2{ 
+        
+        position: relative;
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        
+    }
+
+}
+@media all and (max-width: 992px){ 
+    
+    .container{ 
+        position: static;
+        
+    }
+    .obraz{ 
+        position: relative;
+        height: 50%;
+        width: 100%;
+        background-size: cover;
+    }
+    .tekst{ 
+        position: absolute;
+        text-transform: uppercase;
+        top: 120%;
+        text-align: center;
+        left: 25%;
+    }
+    .obraz2{ 
+        visibility: hidden;
+    }
+
+}
